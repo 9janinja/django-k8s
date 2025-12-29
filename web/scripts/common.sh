@@ -5,7 +5,7 @@ set -e  # Exit on any error (good for CI/CD and containers)
 
 # Default values for environment variables
 APP_PORT=${PORT:-8000}
-SUPERUSER_EMAIL=${DJANGO_SUPERUSER_EMAIL:-"awurebarry@gmail.com"}
+SUPERUSER_EMAIL=${DJANGO_SUPERUSER_EMAIL:-"admin@example.com"}
 
 # Always work from the app directory
 cd /app/

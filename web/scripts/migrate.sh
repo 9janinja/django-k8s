@@ -13,8 +13,3 @@ echo "Creating superuser (if not exists)..."
     --noinput || true  # Ignore error if user already exists
 
 echo "Migrations and superuser setup complete."
-
-
-#And if you're using a separate migration job (common in Kubernetes):
-#YAML# In your Kubernetes Job for migrations
-##command: ["/app/scripts/migrate.sh"]
