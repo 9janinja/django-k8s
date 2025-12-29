@@ -1,5 +1,5 @@
 """
-URL configuration for web project.
+URL configuration for django_k8s project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.0/topics/http/urls/
