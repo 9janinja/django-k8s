@@ -8,17 +8,14 @@ https://docs.djangoproject.com/en/6.0/howto/deployment/wsgi/
 """
 
 import os
-import pathlib
-
-import dotenv
+from pathlib import Path
+from dotenv import load_dotenv
 
 from django.core.wsgi import get_wsgi_application
 
-CURRENT_DIR = pathlib.Path(__file__).resolve().parent
-BASE_DIR = CURRENT_DIR.parent
-ENV_DIR = BASE_DIR / '.env'
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-dotenv.read_dotenv(str(ENV_DIR))    
+load_dotenv(BASE_DIR / '.env') 
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_k8s.settings')
 
